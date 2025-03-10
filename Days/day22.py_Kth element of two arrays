@@ -1,0 +1,9 @@
+class Solution:
+
+    def kthElement(self, a, b, k):
+        # pass
+        s=a+b
+        s.sort()
+        for i in range(len(s)):
+            if i==k-1:
+                return s[i]
